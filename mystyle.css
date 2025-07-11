@@ -20,12 +20,17 @@ img{
     max-width: 100%;
 }
 
-header{
+.init-header{
     background-image: url(./images/banner.jpg);
     background-size: cover;
     height: 300px;
     color: white;
     text-align: center;
+}
+
+.secondary-header{
+    background-color: black;
+    color:white;
 }
 
 .btn{
@@ -65,6 +70,16 @@ header{
     margin-right: auto;
 }
 
+.about-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-flex img{
+    width: 50%;
+    margin-right: 10px;
+}
+
 footer{
    background-color: black;
    color :white;
@@ -74,4 +89,34 @@ footer{
     color: white;
     text-decoration: none;
     margin-right: 20px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container{
+    margin-top: -50px;
+    
+}
+form{
+    background-color: white;
+    padding: 30px;
+}
+
+input,textarea{
+    width: 60%;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+}
+
+form div{
+    margin-bottom: 20px;
 }
